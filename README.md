@@ -1,2 +1,5 @@
 # Fronty2
-Repositorio de ejercicios y proyectos de FrontEnd II en Digital House
+Repo de FrontEnd II - Digital House
+
+Ejercicios y proyectos ordenados por clase.
+Los enlaces a el ejercicio terminado se encuentran en el README de cada clase.
