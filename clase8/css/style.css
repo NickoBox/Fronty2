@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --bg-color-principal: #2d44a9;
+    --txt-color-principal: #fff;
+    --bg-color-internacional: #A92D44;
+    --bg-color-nacional: #2DA954;
+    --bg-color-noticia: #eee;
+    --bg-color-noticia-borde: #ddd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+    background-color: var(--bg-color-principal);
+    color: var(--txt-color-principal);
+    height: 70px;
+}
+
+header h1{
+    padding-left: 5px;
+}
+
+header img {
+    height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: var(--bg-color-noticia);
+    width: 45%;
+    position: relative;
+    border: 0.5px solid var(--bg-color-noticia-borde);
+}
+
+article.internacional::before {
+    content: "Internacional";
+    background-color: var(--bg-color-internacional);
+    color: var(--txt-color-principal);
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+article.internacional::before {
+    content: "Internacional";
+    background-color: var(--bg-color-internacional);
+    color: var(--txt-color-principal);
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+article.nacional::before {
+    content: "Nacional";
+    background-color: var(--bg-color-nacional);
+    color: var(--txt-color-principal);
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+article img {
+    width: 100%;
+}
+
+article .fecha-noticia {
+    background-color:var(--bg-color-principal);
+    color: var(--txt-color-principal);
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    padding: 5px 20px;
+    border-radius: 0px 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color-principal);
+    color: var(--txt-color-principal);
+    height: 100%;
+    padding: 10px;
+    margin-top: 40px;
+}
